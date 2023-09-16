@@ -10,8 +10,8 @@ main{
      height: 100vh;
      padding: 100px;
      display: flex;
-    align-items: center;
-    justify-content: center;
+     align-items: center;
+     justify-content: center;
 }
 
 .card{
@@ -20,15 +20,14 @@ main{
     justify-content: center;
     flex-direction: column;
     background-color: white;
-    width: 385px;
+    width: min-content;
     height: auto;
     border-radius: 20px;
 }
 .qr img{
     width: 350px;
-    margin-top: 20px;
-    margin-bottom: 30px;
     border-radius: 12px;
+    margin: 20px 20px 35px 20px;
 }
 
 .box-text{
@@ -45,4 +44,31 @@ main{
     font-size: 20px;
     text-align: center;
     color: grey;
+}
+
+@media (max-width: 375px) {
+.card{
+    width: 300px;
+}
+
+.qr img{
+    width: 300px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5%;
+    border-radius: 30px;
+}
+
+.box-text{
+    margin: 0px 5% 20px 5%;
+}
+
+.title{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.text{
+    font-size: 15px;
+}
 }
